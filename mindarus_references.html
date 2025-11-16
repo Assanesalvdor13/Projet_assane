@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phylogénomique du genre Mindarus - Résumé et Références</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #f8f9fa;
+            line-height: 1.6;
+            color: #212529;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2em;
+        }
+        
+        .header p {
+            margin: 5px 0;
+            opacity: 0.9;
+        }
+        
+        .section {
+            background-color: white;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+        }
+        
+        h2 {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        .resume {
+            text-align: justify;
+            font-size: 1.05em;
+        }
+        
+        .keywords {
+            background-color: #f0f3ff;
+            padding: 15px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+            font-style: italic;
+        }
+        
+        .keywords strong {
+            color: #667eea;
+        }
+        
+        .reference {
+            padding: 15px;
+            margin: 15px 0;
+            background-color: #f8f9fa;
+            border-left: 4px solid #764ba2;
+            transition: all 0.3s ease;
+        }
+        
+        .reference:hover {
+            background-color: #e9ecef;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .ref-number {
+            font-weight: bold;
+            color: #764ba2;
+            font-size: 1.1em;
+            margin-right: 8px;
+        }
+        
+        .authors {
+            color: #2c3e50;
+        }
+        
+        .title {
+            font-weight: bold;
+            color: #1a1a1a;
+            margin: 5px 0;
+        }
+        
+        .journal {
+            color: #6c757d;
+            font-style: italic;
+        }
+        
+        .category {
+            display: inline-block;
+            background-color: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-top: 8px;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .stat-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #dee2e6;
+            color: #6c757d;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+            }
+            .section {
+                box-shadow: none;
+                border: 1px solid #dee2e6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Phylogénomique du genre <em>Mindarus</em> (Aphididae)</h1>
+        <p><strong>Analyse de concordance phylogénétique et tri incomplet des lignées</strong></p>
+        <p>364 gènes nucléaires • 57 échantillons • Anchored Hybrid Enrichment</p>
+    </div>
+
+    <div class="section">
+        <h2>📊 Données de l'étude</h2>
+        <div class="stats">
+            <div class="stat-box">
+                <span class="stat-number">364</span>
+                <span class="stat-label">Gènes nucléaires</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">57</span>
+                <span class="stat-label">Échantillons</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">~12</span>
+                <span class="stat-label">Espèces actuelles</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">2.7%</span>
+                <span class="stat-label">Gènes concordants</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📄 Résumé</h2>
+        <div class="resume">
+            <p>Le genre <em>Mindarus</em> (Aphididae) représente un cas d'étude particulier en phylogénomique des aphidiens, avec une faible diversité actuelle (~12 espèces) contrastant avec une riche histoire fossile, suggérant un goulot d'étranglement évolutif potentiellement lié au refroidissement climatique de l'Éocène (~50 Ma). Cette étude vise à reconstruire la phylogénie du genre à partir de données génomiques (364 gènes nucléaires, 57 échantillons) obtenues par Anchored Hybrid Enrichment (AHE), et à identifier les sources d'incertitude entourant un nœud critique de l'arbre d'espèces ASTRAL. Ce nœud, faiblement supporté (bootstrap = 73%), propose un regroupement frère entre les clades Est Asiatique (EA) et Nord-Américain 2 (NA2), tandis que le clade Nord-Américain 1 (NA1) occupe une position différente dans la topologie.</p>
+            
+            <p>L'analyse de concordance phylogénétique révèle un conflit majeur : seulement dix gènes (2,7%) soutiennent la topologie consensus d'ASTRAL ((EA, NA2), NA1) ou les deux groupes EA et NA2 sont frères avec un bootstrap de 73%. Les facteurs de concordance (gCF = 15,93% ; sCF = 33,68%) confirment un support équivoque pour les deux topologies. Les tests d'introgression (D-statistics) n'ont détecté aucun signal significatif d'hybridation ancienne (tous p > 0,05), suggérant que le tri incomplet des lignées (ILS) représente potentiellement le mécanisme évolutif dominant de cette discordance.</p>
+            
+            <p>Cette étude démontre l'importance des analyses phylogénomiques pour quantifier les conflits entre arbres de gènes, particulièrement dans des groupes ayant subi des radiations rapides ou des goulots d'étranglement démographiques.</p>
+        </div>
+        
+        <div class="keywords">
+            <strong>Mots-clés :</strong> <em>Mindarus</em>, Phylogénomique, Aphididae, concordance phylogénétique, tri incomplet des lignées, Anchored Hybrid Enrichment
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📚 Références Bibliographiques</h2>
+        
+        <div class="reference">
+            <span class="ref-number">1.</span>
+            <div>
+                <div class="authors">Lemmon AR, Emme SA, Lemmon EM.</div>
+                <div class="title">Anchored Hybrid Enrichment for Massively High-Throughput Phylogenomics.</div>
+                <div class="journal">Syst Biol. 2012;61(5):727–44.</div>
+                <span class="category">Méthodes AHE</span>
+            </div>
+        </div>
+
+        <div class="reference">
+            <span class="ref-number">2.</span>
+            <div>
+                <div class="authors">Hamilton CA, Lemmon AR, Lemmon EM, Bond JE.</div>
+                <div class="title">Expanding anchored hybrid enrichment to resolve both deep and shallow relationships within the spider tree of life.</div>
+                <div class="journal">BMC Evol Biol. 2016;16(1):212.</div>
+                <span class="category">Applications AHE</span>
+            </div>
+        </div>
+
+        <div class="reference">
+            <span class="ref-number">3.</span>
+            <div>
+                <div class="authors">Nakhleh L.</div>
+                <div class="title">Computational approaches to species phylogeny inference and gene tree reconciliation.</div>
+                <div class="journal">Trends Ecol Evol. 2013;28(12):719–28.</div>
+                <span class="category">Phylogénomique</span>
+            </div>
+        </div>
+
+        <div class="reference">
+            <span class="ref-number">4.</span>
+            <div>
+                <div class="authors">Favret C, Nielsen C.</div>
+                <div class="title">A New Species of Mindarus (Hemiptera: Aphididae) on the Endangered Guatemalan Fir.</div>
+                <div class="journal">Ann Èntomol Soc Am. 2008;101(5):833–6.</div>
+                <span class="category">Mindarus</span>
+            </div>
+        </div>
+
+        <div class="reference">
+            <span class="ref-number">5.</span>
+            <div>
+                <div class="authors">Montagano L, Favret C.</div>
+                <div class="title">The Distribution of Campaniform Sensilla on the Appendages of Mindarus Species (Hemiptera: Aphididae).</div>
+                <div class="journal">Èntomol N. 2016;126(3):196–203.</div>
+                <span class="category">Mindarus</span>
+            </div>
+        </div>
+
+        <div class="reference">
+            <span class="ref-number">6.</span>
+            <div>
+                <div class="authors">Lemmon EM, Lemmon AR.</div>
+                <div class="title">High-Throughput Genomic Data in Systematics and Phylogenetics.</div>
+                <div class="journal">Ecol, Evol, Syst. 2013;44(1):99–121.</div>
+                <span class="category">Génomique</span>
+            </div>
+        </div>
+
+        <div class="reference">
+            <span class="ref-number">7.</span>
+            <div>
+                <div class="authors">Mallet J, Besansky N, Hahn MW.</div>
+                <div class="title">How reticulated are species?</div>
+                <div class="journal">BioEssays. 2015;38(2):140–9.</div>
+                <span class="category">Introgression</span>
+            </div>
+        </div>
+
+        <div class="reference">
+            <span class="ref-number">8.</span>
+            <div>
+                <div class="authors">Bolger AM, Lohse M, Usadel B.</div>
+                <div class="title">Trimmomatic: a flexible trimmer for Illumina sequence data.</div>
+                <div class="journal">Bioinformatics. 2014;30(15):2114–20.</div>
+                <span class="category">Bioinformatique</span>
+            </div>
+        </div>
+
+        <div class="reference">
+            <span class="ref-number">9.</span>
+            <div>
+                <div class="authors">Li D, Liu CM, Luo R, Sadakane K, Lam TW.</div>
+                <div class="title">MEGAHIT: an ultra-fast single-node solution for large and complex metagenomics assembly via succinct de Bruijn graph.</div>
+                <div class="journal">Bioinformatics. 2015;31(10):1674–6.</div>
+                <span class="category">Assemblage</span>
+            </div>
+        </div>
+
+        <div class="reference">
+            <span class="ref-number">10.</span>
+            <div>
+                <div class="authors">Gurevich A, Saveliev V, Vyahhi N, Tesler G.</div>
+                <div class="title">QUAST: quality assessment tool for genome assemblies.</div>
+                <div class="journal">Bioinformatics. 2013;29(8):1072–5.</div>
+                <span class="category">Contrôle qualité</span>
+            </div>
+        </div>
+
+        <div class="reference">
+            <span class="ref-number">11.</span>
+            <div>
+                <div class="authors">Faircloth BC.</div>
+                <div class="title">Identifying conserved genomic elements and designing universal bait sets to enrich them.</div>
+                <div class="journal">Methods Ecol Evol. 2017;8(9):1103–12.</div>
+                <span class="category">Méthodes AHE</span>
+            </div>
+        </div>
+
+        <div class="reference">
+            <span class="ref-number">12.</span>
+            <div>
+                <div class="authors">Kozlov AM, Darriba D, Flouri T, Morel B, Stamatakis A.</div>
+                <div class="title">RAxML-NG: a fast, scalable and user-friendly tool for maximum likelihood phylogenetic inference.</div>
+                <div class="journal">Bioinformatics. 2019;35(21):4453–5.</div>
+                <span class="category">Phylogénie ML</span>
+            </div>
+        </div>
+
+        <div class="reference">
+            <span class="ref-number">13.</span>
+            <div>
+                <div class="authors">Zhang C, Rabiee M, Sayyari E, Mirarab S.</div>
+                <div class="title">ASTRAL-III: polynomial time species tree reconstruction from partially resolved gene trees.</div>
+                <div class="journal">BMC Bioinform. 2018;19(Suppl 6):153.</div>
+                <span class="category">Arbre d'espèces</span>
+            </div>
+        </div>
+
+        <div class="reference">
+            <span class="ref-number">14.</span>
+            <div>
+                <div class="authors">Minh BQ, Schmidt HA, Chernomor O, Schrempf D, Woodhams MD, Haeseler A von, et al.</div>
+                <div class="title">IQ-TREE 2: New Models and Efficient Methods for Phylogenetic Inference in the Genomic Era.</div>
+                <div class="journal">Mol Biol Evol. 2020;37(5):1530–4.</div>
+                <span class="category">Phylogénie ML</span>
+            </div>
+        </div>
+
+        <div class="reference">
+            <span class="ref-number">15.</span>
+            <div>
+                <div class="authors">Durand EY, Patterson N, Reich D, Slatkin M.</div>
+                <div class="title">Testing for Ancient Admixture between Closely Related Populations.</div>
+                <div class="journal">Mol Biol Evol. 2011;28(8):2239–52.</div>
+                <span class="category">D-statistics</span>
+            </div>
+        </div>
+
+        <div class="reference">
+            <span class="ref-number">16.</span>
+            <div>
+                <div class="authors">Sackton TB, Grayson P, Cloutier A, Hu Z, Liu JS, Wheeler NE, et al.</div>
+                <div class="title">Convergent regulatory evolution and loss of flight in paleognathous birds.</div>
+                <div class="journal">Science. 2019;364(6435):74–8.</div>
+                <span class="category">Phylogénomique</span>
+            </div>
+        </div>
+
+        <div class="reference">
+            <span class="ref-number">17.</span>
+            <div>
+                <div class="authors">Edelman NB, Frandsen PB, Miyagi M, Clavijo B, Davey J, Dikow RB, et al.</div>
+                <div class="title">Genomic architecture and introgression shape a butterfly radiation.</div>
+                <div class="journal">Science. 2019;366(6465):594–9.</div>
+                <span class="category">Introgression</span>
+            </div>
+        </div>
+
+        <div class="reference">
+            <span class="ref-number">18.</span>
+            <div>
+                <div class="authors">Baele G, Ji X, Hassler GW, McCrone JT, Shao Y, Zhang Z, et al.</div>
+                <div class="title">BEAST X for Bayesian phylogenetic, phylogeographic and phylodynamic inference.</div>
+                <div class="journal">Nat Methods. 2025;22(8):1653–6.</div>
+                <span class="category">Phylogénie bayésienne</span>
+            </div>
+        </div>
+
+        <div class="reference">
+            <span class="ref-number">19.</span>
+            <div>
+                <div class="authors">Hejase HA, Liu KJ.</div>
+                <div class="title">A scalability study of phylogenetic network inference methods using empirical datasets and simulations involving a single reticulation.</div>
+                <div class="journal">BMC Bioinform. 2016;17(1):422.</div>
+                <span class="category">Réseaux phylogénétiques</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Université de Montréal</strong> | Institut de recherche en biologie végétale (IRBV)</p>
+        <p>Maîtrise en Bioinformatique | Supervision : Prof. Colin Favret</p>
+        <p>Document généré le : <span id="date"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleDateString('fr-CA', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+    </script>
+</body>
+</html>
